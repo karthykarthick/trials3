@@ -1,0 +1,63 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+}
+header h1 {
+    text-align: center;
+}
+
+header #description {
+    text-align: center;
+}
+
+#survey-form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.form-row{
+    display: flex;
+
+}
+.form-row input, select {
+    flex: 3;
+    margin-top: 1rem;
+    padding: .5rem 0;
+}
+.form-row label {
+    flex: 1;  padding: .5rem 0;
+    margin-top: 1rem;
+
+}
+
+.form-row .gender {
+    flex: 4;
+
+    margin-left: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.form-row .trans-mode {
+    flex: 3;    
+}
+.area-container textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+  }
+
+  .area-container p {
+      font-size: 1.4rem;
+  }

@@ -9,45 +9,69 @@
   <body>
     <!-- <h1>Hello World, we are software developers!</h1> -->
 
-    <div>
+    <header>
      <h1 id="title">freeCodeCamp Survey Form</h1>
-      <div >
+      
         <p id="description">Thank you for taking the time to help us improve the platform</p>
-      </div>
-    </div>
+    </header>
 
     <form action="" id="survey-form">
-      <label id="name-label" for="name"
-        >Name: <input id="name" required placeholder="Name"
-      /></label>
-      <label id="email-label" for="email"
-        >Email: <input type="email" required id="email" placeholder="Email" checked />
-      </label>
-      <label id="number-label" for="number">
-        Age:
-        <input type="number" id="number" placeholder="Age" min="0" max="150" />
-      </label>
-      <label for="">
-        Options :
-        <select name="" id="dropdown">
-          Car
-          <option value="bmw">Bmw</option>
-          <option value="benz">benz</option>
-          <option value="tesla">tesla</option>
-        </select>
+      <div class="form-row">
+            <label id="name-label" for="name">Name :</label>
+            <input id="name" required placeholder="Name">
+        </div>
+        <div class="form-row">
+          <label id="email-label" for="email">Email: </label>
+          <input type="email" required id="email" placeholder="Email" checked />
+        </div>
+        <div class="form-row">
+          <label id="number-label" for="number"> Age: </label>
+          <input type="number" id="number" placeholder="Age" min="0" max="150" />
+      
 
-        <input type="radio" id="male" name="gender" value="male" />
-        <label for="male">Male</label><br />
-        <input type="radio" id="female" name="gender" value="female" />
-        <label for="female">Female</label><br />
-        <input type="radio" id="other" name="gender" value="other" />
-        <label for="other">Other</label>
-      </label>
-     
-      <input type="checkbox" name="value" value="Bike" /> Bike
-       <input type="checkbox" name="value" value="car" /> Car
+        </div>
+        
+        <div class="form-row">
+          <label for="">Options :</label>
+          <select name="" id="dropdown">
+            Car
+            <option value="bmw">Bmw</option>
+            <option value="benz">benz</option>
+            <option value="tesla">tesla</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="">Gender</label>
+            <div class="gender">
+                <input type="radio" id="male" name="gender" value="male" />
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" />
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other" />
+                <label for="other">Other</label>
+           </div>
+          
+        </div>  
+        <div class="form-row">
+          <label for="">Mode Of Transport</label>
 
-       <textarea name="textarea" id="" cols="30" rows="10"></textarea>
+          <div class="trans-mode">
+            <input type="checkbox" name="value" value="Bike" /> Bike
+            <input type="checkbox" name="value" value="car" /> Car
+          </div>
+         
+        </div>
+        <div class="area-container">
+          <p>Enter Any Additional Comments</p>
+          <textarea name="textarea" id="" cols="30" rows="10"></textarea>
+        </div>
+    
+        .
+        
+       
+      
+
+       
         
        <button type="submit"  id="submit">Submit</button>
     </form>
