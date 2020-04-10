@@ -1,14 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
+    <!-- <h1>Hello World, we are software developers!</h1> -->
 
-    <h1>Hello World</h1>
+    <div>
+     <h1 id="title">freeCodeCamp Survey Form</h1>
+      <div >
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+      </div>
+    </div>
+
+    <form action="" id="survey-form">
+      <label id="name-label" for="name"
+        >Name: <input id="name" required placeholder="Name"
+      /></label>
+      <label id="email-label" for="email"
+        >Email: <input type="email" required id="email" placeholder="Email" checked />
+      </label>
+      <label id="number-label" for="number">
+        Age:
+        <input type="number" id="number" placeholder="Age" min="0" max="150" />
+      </label>
+      <label for="">
+        Options :
+        <select name="" id="dropdown">
+          Car
+          <option value="bmw">Bmw</option>
+          <option value="benz">benz</option>
+          <option value="tesla">tesla</option>
+        </select>
+
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label><br />
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label><br />
+        <input type="radio" id="other" name="gender" value="other" />
+        <label for="other">Other</label>
+      </label>
+     
+      <input type="checkbox" name="value" value="Bike" /> Bike
+       <input type="checkbox" name="value" value="car" /> Car
+
+       <textarea name="textarea" id="" cols="30" rows="10"></textarea>
+        
+       <button type="submit"  id="submit">Submit</button>
+    </form>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
     <!--
@@ -23,6 +65,6 @@
     - The freeCodeCamp Team
 
     -->
-    <script  src="js/index.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
